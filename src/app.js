@@ -18,7 +18,7 @@ $(() => {
 
       // 新たなアイテムに削除ボタンのclickイベントを追加する
       $list.on('click', '.js-removeButton', () => {
-        // アロー関数を使うとthisが効かなくなるのでevent.targetを使う
+        // アロー関数を使うとjQueryっぽいthisの使い方ができなくなるのでevent.targetを使う
         const $target = $(event.target);
 
         $target.parent().remove();

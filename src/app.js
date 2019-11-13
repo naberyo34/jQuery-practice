@@ -1,10 +1,10 @@
-$ = require("jQuery");
+$ = require('jquery');
 
 $(() => {
   // リストにアイテムを追加 ====================
   addListItem = () => {
-    const $addButton = $(".js-addButton");
-    const $list = $(".js-list");
+    const $addButton = $('.js-addButton');
+    const $list = $('.js-list');
     let itemNum = 1;
 
     $addButton.click(() => {
@@ -24,7 +24,7 @@ $(() => {
   // 動的に追加されるアイテムにイベントを追加 ====================
   addListItemEvent = () => {
     // 削除ボタンのclickイベントを追加する
-    $(document).on("click", ".js-removeButton", () => {
+    $(document).on('click', '.js-removeButton', () => {
       // アロー関数を使うとjQueryっぽいthisの使い方ができなくなるのでevent.targetを使う
       const $target = $(event.target);
 
@@ -32,13 +32,13 @@ $(() => {
     });
 
     // チェックボックスのchangeイベントを追加する
-    $(document).on("change", `.js-checkBox`, () => {
+    $(document).on('change', '.js-checkBox', () => {
       const $target = $(event.target);
 
-      if ($target.prop("checked")) {
-        $target.parent().addClass("checked");
+      if ($target.prop('checked')) {
+        $target.parent().addClass('checked');
       } else {
-        $target.parent().removeClass("checked");
+        $target.parent().removeClass('checked');
       }
     });
   };

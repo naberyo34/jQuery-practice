@@ -21,13 +21,15 @@ html {
   height: 40px;
   margin-top: 40px;
   font-size: 1.6rem;
+  color: #444;
   border: 1px solid #ccc;
   transition: 0.2s;
 }
 
 .addButton:hover {
-  background: #ccf;
-  border: 1px solid #ccf;
+  color: #fff;
+  background: #444;
+  border: 1px solid #444;
 }
 
 .removeButton {
@@ -37,8 +39,9 @@ html {
 }
 
 .removeButton:hover {
-  background: #ccf;
-  border: 1px solid #ccf;
+  color: #fff;
+  background: #444;
+  border: 1px solid #444;
 }
 
 .list {
@@ -61,5 +64,8 @@ html {
 }
 
 .checked {
-  background: #fcc;
+  color: #fff;
+  background: #444;
+  border: 1px solid #444;
+  border-top: none;
 }

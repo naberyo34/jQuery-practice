@@ -3,14 +3,14 @@ $ = require('jQuery');
 $(() => {
   // リスト追加
   generateListItem = () => {
-    const $addButton = $('.addButton');
-    const $list = $('.list');
+    const $addButton = $('.js-addButton');
+    const $list = $('.js-list');
     let itemNum = 1;
 
     $addButton.click(() => {
       const item = `
       <li class="list__item">
-        <input type="checkbox" class="js-checkBox">
+        <input type="checkbox" class="checkBox js-checkBox">
         <p>ITEM${itemNum}</p>
         <button class="removeButton js-removeButton">remove</button>
       </li>
@@ -18,6 +18,7 @@ $(() => {
 
       // 新たなアイテムに削除ボタンのclickイベントを追加する
       $list.on('click', '.js-removeButton', () => {
+        // アロー関数を使うとthisが効かなくなるのでevent.targetを使う
         const $target = $(event.target);
 
         $target.parent().remove();

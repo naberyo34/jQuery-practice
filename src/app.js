@@ -2,7 +2,7 @@ $ = require('jquery');
 
 $(() => {
   // リストにアイテムを追加 ====================
-  addListItem = () => {
+  const addListItem = () => {
     const $addButton = $('.js-addButton');
     const $list = $('.js-list');
     let itemNum = 1;
@@ -22,7 +22,7 @@ $(() => {
   };
 
   // 動的に追加されるアイテムにイベントを追加 ====================
-  addListItemEvent = () => {
+  const addListItemEvent = () => {
     // 削除ボタンのclickイベントを追加する
     $(document).on('click', '.js-removeButton', () => {
       // アロー関数を使うとjQueryっぽいthisの使い方ができなくなるのでevent.targetを使う

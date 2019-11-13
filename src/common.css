@@ -22,7 +22,6 @@ html {
   margin-top: 40px;
   font-size: 1.6rem;
   border: 1px solid #ccc;
-  border-radius: 4px;
   transition: 0.2s;
 }
 
@@ -34,7 +33,6 @@ html {
 .removeButton {
   margin-left: auto;
   border: 1px solid #ccc;
-  border-radius: 4px;
   transition: 0.2s;
 }
 
@@ -51,11 +49,10 @@ html {
 .list__item {
   display: flex;
   padding: 20px;
-  margin-top: 10px;
   justify-content: flex-start;
   align-items: center;
   border: 1px solid #ccc;
-  border-radius: 4px;
+  border-top: none;
   transition: 0.1s;
 }
 
@@ -65,5 +62,4 @@ html {
 
 .checked {
   background: #fcc;
-  border: 1px solid #fcc;
 }

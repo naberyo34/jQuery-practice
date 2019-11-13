@@ -26,14 +26,13 @@ $(() => {
    * 動的に追加されるアイテムにイベントを追加
    */
   const addListItemEvent = () => {
-    // 削除ボタン
+    // 削除ボタン、チェックボックスのイベントをdocumentに対してonする
+    // documentは最初から必ず存在するので、**現在その要素が存在するか**関係なく設定できる
     $(document).on('click', '.js-removeButton', () => {
       const $target = $(event.target);
       $target.parent().remove();
-    });
-
-    // チェックボックス
-    $(document).on('change', '.js-checkBox', () => {
+    })
+    .on('change', '.js-checkBox', () => {
       const $target = $(event.target);
       if ($target.prop('checked')) {
         $target.parent().addClass('checked');

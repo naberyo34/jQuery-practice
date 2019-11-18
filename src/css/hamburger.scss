@@ -1,0 +1,40 @@
+@import 'variables';
+@import 'common';
+
+.hamburger {
+  &__wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: none;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+
+    &--isActive {
+      display: block;
+    }
+  }
+
+  &__container {
+    @extend .container;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+  }
+
+  &__menu {
+    color: $themeWhite;
+    font-size: 2rem;
+    text-align: center;
+    list-style: none;
+
+    &Item {
+      &:not(:first-child) {
+        margin-top: 20px;
+      }
+    }
+  }
+}

@@ -1,0 +1,49 @@
+@import 'common';
+
+/*
+最終課題: todoリスト
+*/
+
+.todo {
+  &__container {
+    @extend .container;
+  }
+
+  &__list {
+    font-size: 1.4rem;
+    list-style: none;
+
+    &Item {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      padding: 20px;
+      border: 1px solid $themeGray;
+      border-top: none;
+      transition: 0.1s;
+
+      &--checked {
+        color: $themeWhite;
+        background: $themeBlack;
+        border: 1px solid $themeBlack;
+        border-top: none;
+      }
+    }
+  }
+
+  &__addButton {
+    @extend .button;
+    width: 100%;
+    height: 40px;
+    font-size: 1.6rem;
+  }
+
+  &__removeButton {
+    @extend .button;
+    margin-left: auto;
+  }
+
+  &__checkBox {
+    margin-right: 20px;
+  }
+}

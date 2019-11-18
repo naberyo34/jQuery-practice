@@ -1,95 +1,31 @@
-/*
-初期化
-*/
-
-html {
-  color: #444;
-  font-size: 62.5%;
-}
-
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
+@import 'variables';
 
 /*
 汎用
 */
 
-.wrapper {
-  padding: 40px;
-  text-align: center;
+section {
+  margin-top: 100px;
 }
 
-.heading {
-  font-size: 3rem;
+.isFixed {
+  overflow: hidden;
 }
 
-.heading2 {
-  margin: 40px 0;
-  font-size: 2rem;
+.container {
+  max-width: $contentWidth;
+  margin: 0 auto;
+  padding: 0 10px;
 }
 
 .button {
-  color: #444;
-  border: 1px solid #ccc;
+  color: $themeBlack;
+  border: 1px solid $themeGray;
   transition: 0.2s;
 
   &:hover {
-    color: #fff;
-    background: #444;
-    border: 1px solid #444;
-  }
-}
-
-/*
-ヘッダー（ハンバーガーメニュー
-*/
-
-/*
-最終課題: todoリスト
-*/
-
-.todo {
-  width: 800px;
-  margin: 0 auto;
-
-  &__list {
-    font-size: 1.4rem;
-    list-style: none;
-
-    &Item {
-      display: flex;
-      align-items: center;
-      justify-content: flex-start;
-      padding: 20px;
-      border: 1px solid #ccc;
-      border-top: none;
-      transition: 0.1s;
-
-      &--checked {
-        color: #fff;
-        background: #444;
-        border: 1px solid #444;
-        border-top: none;
-      }
-    }
-  }
-
-  &__addButton {
-    @extend .button;
-    width: 100%;
-    height: 40px;
-    font-size: 1.6rem;
-  }
-
-  &__removeButton {
-    @extend .button;
-    margin-left: auto;
-  }
-
-  &__checkBox {
-    margin-right: 20px;
+    color: $themeWhite;
+    background: $themeBlack;
+    border: 1px solid $themeBlack;
   }
 }

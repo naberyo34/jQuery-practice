@@ -10,6 +10,9 @@ function hamburger() {
 
   const icon = '[data-js=hamburger__icon]';
 
+  /**
+   * クリックイベント
+   */
   const handleClick = () => {
     const iconActive = 'header__hamburger--isActive'
     const wrapperActive = 'hamburger__wrapper--isActive'
@@ -21,7 +24,10 @@ function hamburger() {
     $body.toggleClass(fixed);
   };
 
-  $('body')
+  /**
+   * イベントの設定
+   */
+  $body
     .on('click', icon, handleClick);
 }
 

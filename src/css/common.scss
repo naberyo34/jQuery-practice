@@ -4,8 +4,13 @@
 汎用
 */
 
-section {
+.section {
   margin-top: 100px;
+}
+
+.heading2 {
+  margin-bottom: 20px;
+  font-size: 2rem;
 }
 
 .isFixed {
@@ -13,9 +18,8 @@ section {
 }
 
 .container {
-  max-width: $contentWidth;
+  width: $contentWidth;
   margin: 0 auto;
-  padding: 0 10px;
 }
 
 .button {

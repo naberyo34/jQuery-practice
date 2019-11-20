@@ -5,8 +5,14 @@
 */
 
 .todo {
+  @extend .section;
+
   &__container {
     @extend .container;
+  }
+
+  &__heading2 {
+    @extend .heading2;
   }
 
   &__list {

@@ -1,11 +1,56 @@
 @import 'common';
 
+.itemStyle {
+  width: 200px;
+  color: $themeWhite;
+  background: $themeBlack;
+}
+
 .dropdown {
+  @extend .section;
+
   &__container {
     @extend .container;
+    height: 200px;
   }
 
   &__heading2 {
     @extend .heading2;
+  }
+
+  &__menu {
+    display: flex;
+
+    &Column {
+      @extend .itemStyle;
+      position: relative;
+      margin-right: 10px;
+      font-size: 1.6rem;
+
+      &Label {
+        padding: 10px;
+      }
+    }
+  }
+
+  &__itemList {
+    @extend .itemStyle;
+    position: absolute;
+    display: none;
+    list-style: none;
+
+    &--isActive {
+      display: block;
+    }
+
+    :hover {
+      color: $themeBlack;
+      background: $themeWhite;
+    }
+  }
+
+  &__item {
+    padding: 10px;
+    transition: $animeFast;
   }
 }

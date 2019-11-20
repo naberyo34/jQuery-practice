@@ -5,6 +5,8 @@
 */
 
 .todo {
+  @extend .section;
+
   &__container {
     @extend .container;
   }

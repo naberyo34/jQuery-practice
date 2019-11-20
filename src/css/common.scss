@@ -4,7 +4,7 @@
 汎用
 */
 
-section {
+.section {
   margin-top: 100px;
 }
 
@@ -18,7 +18,7 @@ section {
 }
 
 .container {
-  max-width: $contentWidth;
+  width: $contentWidth;
   margin: 0 auto;
   padding: 0 10px;
 }

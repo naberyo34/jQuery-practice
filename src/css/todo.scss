@@ -9,6 +9,10 @@
     @extend .container;
   }
 
+  &__heading2 {
+    @extend .heading2;
+  }
+
   &__list {
     font-size: 1.4rem;
     list-style: none;

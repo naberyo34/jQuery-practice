@@ -1,0 +1,11 @@
+@import 'common';
+
+.dropdown {
+  &__container {
+    @extend .container;
+  }
+
+  &__heading2 {
+    @extend .heading2;
+  }
+}

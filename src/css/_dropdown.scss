@@ -1,28 +1,14 @@
-@import 'common';
-
-.itemStyle {
-  width: 200px;
-  color: $themeWhite;
-  background: $themeBlack;
-}
+@import 'variables';
 
 .dropdown {
-  @extend .section;
-
   &__container {
-    @extend .container;
     height: 200px;
-  }
-
-  &__heading2 {
-    @extend .heading2;
   }
 
   &__menu {
     display: flex;
 
     &Column {
-      @extend .itemStyle;
       position: relative;
       margin-right: 10px;
 
@@ -33,7 +19,6 @@
   }
 
   &__itemList {
-    @extend .itemStyle;
     position: absolute;
     display: none;
     list-style: none;

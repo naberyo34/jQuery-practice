@@ -1,4 +1,4 @@
-@import 'common';
+@import 'variables';
 
 /*
 ヘッダー（ハンバーガーメニュー)
@@ -15,7 +15,6 @@
   background: $themeBlack;
 
   &__container {
-    @extend .container;
     display: flex;
     align-items: center;
     height: 100%;

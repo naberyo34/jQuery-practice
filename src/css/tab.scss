@@ -1,0 +1,51 @@
+@import 'common';
+
+.tab {
+  @extend .section;
+
+  &__container {
+    @extend .container;
+  }
+
+  &__heading2 {
+    @extend .heading2;
+  }
+
+  &__menuContainer {
+    display: flex;
+  }
+
+  &__menu {
+    width: 200px;
+    margin-right: 10px;
+    padding: 10px;
+    color: $themeBlack;
+    background: $themeWhite;
+    border: 1px solid $themeBlack;
+    border-bottom: none;
+
+    &--isActive {
+      color: $themeWhite;
+      background: $themeBlack;
+    }
+  }
+
+  &__contentContainer {
+    width: 620px;
+    height: 310px;
+    padding: 10px;
+    border: 1px solid $themeBlack;
+  }
+
+  &__content {
+    display: none;
+
+    p {
+      font-size: 1rem;
+    }
+
+    &--isActive {
+      display: block;
+    }
+  }
+}

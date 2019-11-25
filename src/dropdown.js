@@ -17,13 +17,11 @@ function dropdown() {
   const handleMouseEnter = event => {
     const $target = $(event.currentTarget); // currentTargetなので注意
     $target.find(itemList).addClass(isActive);
-    console.log($target);
   };
 
   const handleMouseLeave = event => {
     const $target = $(event.currentTarget);
     $target.find(itemList).removeClass(isActive);
-    console.log($target);
   };
 
   /**

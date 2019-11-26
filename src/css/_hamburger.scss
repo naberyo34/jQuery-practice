@@ -25,7 +25,6 @@
   }
 
   &__menu {
-    color: $themeWhite;
     font-size: 2rem;
     text-align: center;
     list-style: none;
@@ -33,6 +32,11 @@
     &Item {
       &:not(:first-child) {
         margin-top: 20px;
+      }
+
+      a:link, a:visited, a:hover, a:active {
+        color: $themeWhite;
+        text-decoration: none;
       }
     }
   }

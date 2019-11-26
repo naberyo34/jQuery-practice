@@ -23,7 +23,7 @@ function todoList() {
       <li class="todo__listItem" data-js="todo__listItem">
         <input type="checkbox" class="todo__checkBox" data-js="todo__checkBox">
         <p>ITEM${itemNum}</p>
-        <button class="todo__removeButton" data-js="todo__removeButton">remove</button>
+        <button class="button todo__removeButton" data-js="todo__removeButton">remove</button>
       </li>
       `;
 

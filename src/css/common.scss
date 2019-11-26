@@ -30,7 +30,8 @@ body * {
 */
 
 .section {
-  margin-top: 100px;
+  margin: 100px 0;
+
 }
 
 .heading2 {
@@ -47,14 +48,14 @@ body * {
   margin: 0 auto;
 }
 
-.item {
+.button {
   color: $themeBlack;
-  border: 1px solid $themeGray;
+  border: 1px solid $themeBlack;
+  cursor: pointer;
   transition: 0.2s;
 
   &:hover {
     color: $themeWhite;
     background: $themeBlack;
-    border: 1px solid $themeBlack;
   }
 }

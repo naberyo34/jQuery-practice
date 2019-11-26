@@ -10,10 +10,13 @@
 
     &Column {
       position: relative;
-      margin-right: 10px;
 
       &Label {
+        width: 200px;
+        margin-right: 10px;
         padding: 10px;
+        color: $themeWhite;
+        background: $themeBlack;
       }
     }
   }
@@ -26,15 +29,18 @@
     &--isActive {
       display: block;
     }
-
-    :hover {
-      color: $themeBlack;
-      background: $themeWhite;
-    }
   }
 
   &__item {
+    width: 200px;
     padding: 10px;
+    border: 1px solid $themeBlack;
+    border-top: none;
     transition: $animeFast;
+
+    &:hover {
+      color: $themeWhite;
+      background: $themeBlack;
+    }
   }
 }

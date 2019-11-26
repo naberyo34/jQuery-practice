@@ -1,0 +1,34 @@
+@import 'variables';
+
+.modal {
+  &__wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: none;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+
+    &--isActive {
+      display: block;
+    }
+  }
+
+  &__window {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 200px;
+    height: 100px;
+    padding: 20px 0;
+    text-align: center;
+    background: $themeWhite;
+    transform: translate(-50%, -50%);
+  }
+
+  &__button {
+    margin-top: 20px;
+  }
+}

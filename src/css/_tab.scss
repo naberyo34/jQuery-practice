@@ -1,16 +1,6 @@
-@import 'common';
+@import 'variables';
 
 .tab {
-  @extend .section;
-
-  &__container {
-    @extend .container;
-  }
-
-  &__heading2 {
-    @extend .heading2;
-  }
-
   &__menuContainer {
     display: flex;
   }
@@ -19,8 +9,6 @@
     width: 200px;
     margin-right: 10px;
     padding: 10px;
-    color: $themeBlack;
-    background: $themeWhite;
     border: 1px solid $themeBlack;
     border-bottom: none;
 

@@ -7,22 +7,22 @@
 
 <body>
   <div class="hamburger__wrapper" data-js="hamburger__wrapper">
-    <div class="hamburger__container">
+    <div class="container hamburger__container">
       <ul class="hamburger__menu" data-js="hamburger__menu">
-        <li class="hamburger__menuItem">ハンバーガーメニュー</li>
-        <li class="hamburger__menuItem">ドロップダウンメニュー</li>
-        <li class="hamburger__menuItem">タブ</li>
-        <li class="hamburger__menuItem">モーダル</li>
-        <li class="hamburger__menuItem">カルーセル</li>
-        <li class="hamburger__menuItem">ローディング画面</li>
-        <li class="hamburger__menuItem">スムーススクロール</li>
-        <li class="hamburger__menuItem">スクロールアクション</li>
-        <li class="hamburger__menuItem">Todoリスト</li>
+        <li class="hamburger__menuItem"><a href="#hamburger">ハンバーガーメニュー</a></li>
+        <li class="hamburger__menuItem"><a href="#dropdown">ドロップダウンメニュー</a></li>
+        <li class="hamburger__menuItem"><a href="#tab">タブ</a></li>
+        <li class="hamburger__menuItem"><a href="#modal">モーダル</a></li>
+        <li class="hamburger__menuItem"><a href="#carousel">カルーセル</a></li>
+        <li class="hamburger__menuItem"><a href="#loading">ローディング画面</a></li>
+        <li class="hamburger__menuItem"><a href="#smoothScroll">スムーススクロール</a></li>
+        <li class="hamburger__menuItem"><a href="#scrollAction">スクロールアクション</a></li>
+        <li class="hamburger__menuItem"><a href="#todo">Todoリスト</a></li>
       </ul>
     </div>
   </div>
-  <header class="header">
-    <div class="header__container">
+  <header class="header" id="hamburger">
+    <div class="container header__container">
       <h1 class="header__heading">jQuery十番勝負 🍙</h1>
       <a class="header__hamburger" data-js="hamburger__icon">
         <span class="header__hamburgerLine"></span>
@@ -31,16 +31,15 @@
       </a>
     </div>
   </header>
-  <section class="dropdown">
-    <div class="dropdown__container">
-      <h2 class="dropdown__heading2">ドロップダウンメニュー</h2>
+  <section class="section dropdown" id="dropdown">
+    <div class="container dropdown__container">
+      <h2 class="heading2 dropdown__heading2">ドロップダウンメニュー</h2>
       <div class="dropdown__menu">
         <div class="dropdown__menuColumn" data-js="dropdown__menuColumn">
           <p class="dropdown__menuColumnLabel">A</p>
           <ul class="dropdown__itemList" data-js="dropdown__itemList">
             <li class="dropdown__item">A-1</li>
             <li class="dropdown__item">A-2</li>
-            <li class="dropdown__item">A-3</li>
           </ul>
         </div>
         <div class="dropdown__menuColumn" data-js="dropdown__menuColumn">
@@ -57,14 +56,15 @@
             <li class="dropdown__item">C-1</li>
             <li class="dropdown__item">C-2</li>
             <li class="dropdown__item">C-3</li>
+            <li class="dropdown__item">C-4</li>
           </ul>
         </div>
       </div>
     </div>
   </section>
-  <section class="tab">
-    <div class="tab__container">
-      <h2 class="tab__heading2">タブ</h2>
+  <section class="section tab" id="tab">
+    <div class="container tab__container">
+      <h2 class="heading2 tab__heading2">タブ</h2>
       <div class="tab__menuContainer">
         <div
           class="tab__menu tab__menu--isActive"
@@ -134,10 +134,10 @@
       </div>
     </div>
   </section>
-  <section class="todo">
-    <div class="todo__container">
-      <h2 class="todo__heading2">Todoリスト</h2>
-      <button class="todo__addButton" data-js="todo__addButton">add</button>
+  <section class="section todo" id="todo">
+    <div class="container todo__container">
+      <h2 class="heading2 todo__heading2">Todoリスト</h2>
+      <button class="button todo__addButton" data-js="todo__addButton">add</button>
       <ul class="todo__list" data-js="todo__list"></ul>
     </div>
   </section>

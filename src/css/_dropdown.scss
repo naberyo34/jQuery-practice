@@ -1,39 +1,27 @@
-@import 'common';
-
-.itemStyle {
-  width: 200px;
-  color: $themeWhite;
-  background: $themeBlack;
-}
+@import 'variables';
 
 .dropdown {
-  @extend .section;
-
   &__container {
-    @extend .container;
     height: 200px;
-  }
-
-  &__heading2 {
-    @extend .heading2;
   }
 
   &__menu {
     display: flex;
 
     &Column {
-      @extend .itemStyle;
       position: relative;
-      margin-right: 10px;
 
       &Label {
+        width: 200px;
+        margin-right: 10px;
         padding: 10px;
+        color: $themeWhite;
+        background: $themeBlack;
       }
     }
   }
 
   &__itemList {
-    @extend .itemStyle;
     position: absolute;
     display: none;
     list-style: none;
@@ -41,15 +29,18 @@
     &--isActive {
       display: block;
     }
-
-    :hover {
-      color: $themeBlack;
-      background: $themeWhite;
-    }
   }
 
   &__item {
+    width: 200px;
     padding: 10px;
+    border: 1px solid $themeBlack;
+    border-top: none;
     transition: $animeFast;
+
+    &:hover {
+      color: $themeWhite;
+      background: $themeBlack;
+    }
   }
 }

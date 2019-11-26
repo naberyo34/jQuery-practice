@@ -1,20 +1,10 @@
-@import 'common';
+@import 'variables';
 
 /*
 最終課題: todoリスト
 */
 
 .todo {
-  @extend .section;
-
-  &__container {
-    @extend .container;
-  }
-
-  &__heading2 {
-    @extend .heading2;
-  }
-
   &__list {
     font-size: 1.4rem;
     list-style: none;
@@ -24,7 +14,7 @@
       align-items: center;
       justify-content: flex-start;
       padding: 20px;
-      border: 1px solid $themeGray;
+      border: 1px solid $themeBlack;
       border-top: none;
       transition: 0.1s;
 
@@ -38,13 +28,11 @@
   }
 
   &__addButton {
-    @extend .button;
     width: 100%;
     height: 40px;
   }
 
   &__removeButton {
-    @extend .button;
     margin-left: auto;
   }
 

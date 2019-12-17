@@ -4,6 +4,7 @@ import dropdown from './dropdown';
 import tab from './tab';
 import todoList from './todoList';
 import modal from './modal';
+import carousel from './carousel';
 import './css/reset.css';
 import './css/common.scss';
 
@@ -14,4 +15,5 @@ $(() => {
   tab();
   todoList();
   modal();
+  carousel();
 });

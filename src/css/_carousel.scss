@@ -1,0 +1,45 @@
+@import 'variables';
+
+.carousel {
+  &__contentContainer {
+    width: 620px;
+    height: 310px;
+    padding: 10px;
+    border: 1px solid $themeBlack;
+  }
+
+  &__slide {
+    display: none;
+    width: 100%;
+    height: 100%;
+
+    &--isActive {
+      display: block;
+    }
+  }
+
+  &__slideImg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    color: $themeWhite;
+
+    p {
+      font-size: 3.2rem;
+    }
+
+    &--1 {
+      background: #faa;
+    }
+
+    &--2 {
+      background: #afa;
+    }
+
+    &--3 {
+      background: #aaf;
+    }
+  }
+}

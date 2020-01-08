@@ -5,6 +5,7 @@ import tab from './tab';
 import todoList from './todoList';
 import modal from './modal';
 import carousel from './carousel';
+import loading from './loading';
 import './css/reset.css';
 import './css/common.scss';
 
@@ -16,4 +17,5 @@ $(() => {
   todoList();
   modal();
   carousel();
+  loading();
 });

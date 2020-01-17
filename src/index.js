@@ -6,6 +6,8 @@ import todoList from './todoList';
 import modal from './modal';
 import carousel from './carousel';
 import loading from './loading';
+import pageTop from './pageTop';
+
 import './css/reset.css';
 import './css/common.scss';
 
@@ -18,4 +20,5 @@ $(() => {
   modal();
   carousel();
   loading();
+  pageTop();
 });

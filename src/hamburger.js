@@ -9,6 +9,7 @@ function hamburger() {
   const $body = $('body');
 
   const icon = '[data-js=hamburger__icon]';
+  const wrapper = '[data-js=hamburger__wrapper]';
 
   /**
    * クリックイベント
@@ -24,11 +25,23 @@ function hamburger() {
     $body.toggleClass(fixed);
   };
 
+  const handleWrapperClick = () => {
+    const iconActive = 'header__hamburger--isActive'
+    const wrapperActive = 'hamburger__wrapper--isActive'
+    const fixed = 'isFixed';
+
+    // wrapperをクリックしたら問答無用でactiveが外れる
+    $icon.removeClass(iconActive);
+    $wrapper.removeClass(wrapperActive);
+    $body.removeClass(fixed);
+  }
+
   /**
    * イベントの設定
    */
   $body
-    .on('click', icon, handleClick);
+    .on('click', icon, handleClick)
+    .on('click', wrapper, handleWrapperClick);
 }
 
 export default hamburger;

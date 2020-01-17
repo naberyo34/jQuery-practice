@@ -7,9 +7,13 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 50px;
-  height: 50px;
+  width: 80px;
+  height: 80px;
   color: $themeWhite;
   background: $themeBlack;
-  border-radius: 50px;
+  border-radius: 50%;
+
+  p {
+    font-size: 4rem;
+  }
 }

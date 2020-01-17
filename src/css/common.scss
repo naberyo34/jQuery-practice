@@ -48,6 +48,7 @@ body * {
 }
 
 .container {
+  position: relative;
   width: $contentWidth;
   margin: 0 auto;
 }

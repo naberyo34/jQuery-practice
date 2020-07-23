@@ -101,12 +101,20 @@
         <div class="section__content">
           <div class="tab">
             <ul class="tab__items">
-              <li class="tab__item tab__item--active" data-js-selector="tabItem">要素A</li>
+              <li
+                class="tab__item tab__item--active"
+                data-js-selector="tabItem"
+              >
+                要素A
+              </li>
               <li class="tab__item" data-js-selector="tabItem">要素B</li>
               <li class="tab__item" data-js-selector="tabItem">要素C</li>
             </ul>
             <div class="tab__contents">
-              <div class="tab__content tab__content--active" data-js-selector="tabContent">
+              <div
+                class="tab__content tab__content--active"
+                data-js-selector="tabContent"
+              >
                 <p>要素Aを表示中です。</p>
               </div>
               <div class="tab__content" data-js-selector="tabContent">
@@ -127,9 +135,38 @@
       </section>
       <section class="section" id="carousel">
         <h2 class="section__title">🎠 カルーセル</h2>
+        <div class="section__content">
+          <div class="carousel">
+            <div class="carousel__inner">
+              <a class="carousel__button carousel__button--disable" data-js-selector="carouselPrev"></a>
+              <div class="carousel__contentWindow">
+                <div class="carousel__contents" data-js-selector="carouselContents">
+                  <div class="carousel__content">
+                    <p>要素1を表示中です。</p>
+                  </div>
+                  <div class="carousel__content">
+                    <p>要素2を表示中です。</p>
+                  </div>
+                  <div class="carousel__content">
+                    <p>要素3を表示中です。</p>
+                  </div>
+                </div>
+              </div>
+              <a class="carousel__button carousel__button--next" data-js-selector="carouselNext"></a>
+            </div>
+            <div class="carousel__dots">
+              <a class="carousel__dot carousel__dot--active" data-js-selector="carouselDot">●</a>
+              <a class="carousel__dot" data-js-selector="carouselDot">●</a>
+              <a class="carousel__dot" data-js-selector="carouselDot">●</a>
+            </div>
+          </div>
+        </div>
       </section>
       <section class="section" id="smoothScroll">
         <h2 class="section__title">⏮ スムーススクロール</h2>
+        <div class="section__content">
+          <p>画面右下のボタンを押してね</p>
+        </div>
       </section>
       <section class="section" id="scrollAction">
         <h2 class="section__title">🎬 スクロールアクション</h2>

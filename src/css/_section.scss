@@ -1,8 +1,4 @@
 .section {
-  &:not(:first-child) {
-    margin-top: 24px;
-  }
-
   &__title {
     padding: 8px 4px;
     background: $colorGray;
@@ -10,6 +6,6 @@
   }
 
   &__content {
-    padding: 16px;
+    padding: 32px 16px;
   }
 }

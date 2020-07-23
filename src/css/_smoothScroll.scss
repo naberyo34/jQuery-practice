@@ -1,0 +1,29 @@
+.smoothScroll {
+  position: fixed;
+  right: 16px;
+  bottom: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 64px;
+  height: 64px;
+  background: $colorBlack;
+  border-radius: 50%;
+  visibility: hidden;
+  cursor: pointer;
+  opacity: 0;
+  transition: visibility $animationFast, opacity $animationFast;
+
+  &--active {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  &__arrow {
+    width: 16px;
+    height: 16px;
+    border-right: 4px solid $colorWhite;
+    border-bottom: 4px solid $colorWhite;
+    transform: translateY(4px) rotate(-135deg);
+  }
+}

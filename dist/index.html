@@ -6,7 +6,7 @@
 </head>
 
 <body>
-  <header class="header">
+  <header class="header" data-js-selector="header">
     <div class="header__inner">
       <h1 class="header__title">jQuery十番勝負🍚</h1>
       <a class="hamburger" data-js-selector="hamburger">
@@ -21,6 +21,9 @@
       <a class="modal__button" data-js-selector="modalButton">閉じる</a>
     </div>
   </section>
+  <a class="smoothScroll" data-js-selector="smoothScroll">
+    <span class="smoothScroll__arrow"></span>
+  </a>
   <main class="main">
     <div class="main__inner">
       <section class="section" id="hamburger">
@@ -138,9 +141,15 @@
         <div class="section__content">
           <div class="carousel">
             <div class="carousel__inner">
-              <a class="carousel__button carousel__button--disable" data-js-selector="carouselPrev"></a>
+              <a
+                class="carousel__button carousel__button--disable"
+                data-js-selector="carouselPrev"
+              ></a>
               <div class="carousel__contentWindow">
-                <div class="carousel__contents" data-js-selector="carouselContents">
+                <div
+                  class="carousel__contents"
+                  data-js-selector="carouselContents"
+                >
                   <div class="carousel__content">
                     <p>要素1を表示中です。</p>
                   </div>
@@ -152,10 +161,17 @@
                   </div>
                 </div>
               </div>
-              <a class="carousel__button carousel__button--next" data-js-selector="carouselNext"></a>
+              <a
+                class="carousel__button carousel__button--next"
+                data-js-selector="carouselNext"
+              ></a>
             </div>
             <div class="carousel__dots">
-              <a class="carousel__dot carousel__dot--active" data-js-selector="carouselDot">●</a>
+              <a
+                class="carousel__dot carousel__dot--active"
+                data-js-selector="carouselDot"
+                >●</a
+              >
               <a class="carousel__dot" data-js-selector="carouselDot">●</a>
               <a class="carousel__dot" data-js-selector="carouselDot">●</a>
             </div>

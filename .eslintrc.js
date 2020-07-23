@@ -11,5 +11,6 @@ module.exports = {
   },
   rules: {
     'jquery/no-slide': 0,
+    'jquery/no-animate': 0,
   },
 };

@@ -21,16 +21,12 @@
 
   &__subItems {
     position: absolute;
-    top: 40px;
+    top: 32px;
     left: 0;
     display: none;
     width: 100%;
     color: $colorBlack;
     background: $colorWhite;
-
-    &--active {
-      display: block;
-    }
   }
 
   &__subItem {

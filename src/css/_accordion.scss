@@ -1,0 +1,34 @@
+.accordion {
+  &:not(:first-child) {
+    margin-top: 16px;
+  }
+
+  &__heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px;
+    background: $colorGray;
+    cursor: pointer;
+  }
+
+  &__icon {
+    display: block;
+    width: 8px;
+    height: 8px;
+    border-right: 2px solid $colorBlack;
+    border-bottom: 2px solid $colorBlack;
+    transform: rotate(45deg);
+  }
+
+  &__content {
+    display: none;
+    padding: 8px;
+  }
+
+  &--active {
+    .accordion__icon {
+      transform: rotate(-135deg);
+    }
+  }
+}

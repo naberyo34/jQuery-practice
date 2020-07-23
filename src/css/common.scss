@@ -3,11 +3,13 @@
 @import 'main';
 @import 'section';
 @import 'dropdown';
+@import 'accordion';
 
 html {
   color: $colorBlack;
   font-size: 62.5%;
   font-family: 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', Meiryo, sans-serif;
+  line-height: 1;
   background: $colorWhite;
 }
 
@@ -19,4 +21,8 @@ html {
 
 body * {
   font-size: 1.6rem;
+}
+
+p {
+  line-height: 1.5;
 }

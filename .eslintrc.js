@@ -1,17 +1,15 @@
 module.exports = {
-  plugins: [
-    'jquery',
-  ],
+  plugins: ['jquery'],
   env: {
     browser: true,
     es6: true,
     jquery: true,
   },
-  extends: [
-    'eslint:recommended',
-    'plugin:jquery/slim',
-  ],
+  extends: ['eslint:recommended', 'plugin:jquery/slim'],
   parserOptions: {
     sourceType: 'module',
-  }
-}
+  },
+  rules: {
+    'jquery/no-slide': 0,
+  },
+};

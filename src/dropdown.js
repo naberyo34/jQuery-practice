@@ -4,21 +4,21 @@ const dropdown = () => {
   const item = '[data-js-selector=dropdownItem]';
   const subItems = '[data-js-selector=dropdownSubItems]';
   const $subItems = $(subItems);
-  const activeClass = 'dropdown__subItems--active';
-  // アクティブクラスを付け外しする関数
-  const addActive = e => {
+  const animationSec = 200;
+  const slideDown = e => {
     const $targetSubItems = $(e.target).children(subItems);
-    $targetSubItems.addClass(activeClass);
+    $targetSubItems.slideDown(animationSec);
   };
 
-  const removeActive = () => {
-    $subItems.removeClass(activeClass);
+  const slideUp = () => {
+    $subItems.stop();
+    $subItems.slideUp(animationSec);
   }
 
   // イベントリスナ付与
   $('body')
-    .on('mouseenter', item, addActive)
-    .on('mouseleave', item, removeActive);
+    .on('mouseenter', item, slideDown)
+    .on('mouseleave', item, slideUp);
 };
 
 export default dropdown;

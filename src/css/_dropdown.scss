@@ -1,0 +1,44 @@
+.dropdown {
+  display: flex;
+
+  &__item {
+    position: relative;
+    width: 120px;
+    padding: 8px;
+    background: $colorGray;
+    cursor: pointer;
+    transition: color $animationFast, background-color $animationFast;
+
+    &:not(:first-child) {
+      margin-left: 8px;
+    }
+
+    &:hover {
+      color: $colorWhite;
+      background: $colorBlack;
+    }
+  }
+
+  &__subItems {
+    position: absolute;
+    top: 40px;
+    left: 0;
+    display: none;
+    width: 100%;
+    color: $colorBlack;
+    background: $colorWhite;
+
+    &--active {
+      display: block;
+    }
+  }
+
+  &__subItem {
+    padding: 8px;
+    transition: background-color $animationFast;
+
+    &:hover {
+      background: $colorGray;
+    }
+  }
+}

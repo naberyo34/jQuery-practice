@@ -11,7 +11,6 @@ const modal = () => {
   // アクティブクラスを付け外しする関数
   const toggleActive = () => {
     if ($body.hasClass(fixedClass)) {
-      console.log(scrollTop);
       $body.removeClass(fixedClass).css({ top: 0 });
       $item.removeClass(activeClass);
       window.scrollTo(0, scrollTop);

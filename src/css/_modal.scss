@@ -1,0 +1,45 @@
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: $zModal;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.4);
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility $animationFast, opacity $animationFast;
+
+  &--active {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  &__content {
+    width: 320px;
+    height: 120px;
+    padding: 16px;
+    text-align: center;
+    background: $colorWhite;
+  }
+
+  &__button {
+    display: block;
+    margin-top: 32px;
+    padding: 8px;
+    color: $colorWhite;
+    background: $colorBlack;
+    cursor: pointer;
+  }
+}
+
+.modalOpen {
+  display: inline-block;
+  padding: 8px;
+  color: $colorWhite;
+  background: $colorBlack;
+  cursor: pointer;
+}

@@ -5,6 +5,7 @@
 @import 'dropdown';
 @import 'accordion';
 @import 'tab';
+@import 'modal';
 
 html {
   color: $colorBlack;
@@ -26,4 +27,11 @@ body * {
 
 p {
   line-height: 1.5;
+}
+
+.fixed {
+  position: fixed;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }

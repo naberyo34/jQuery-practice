@@ -1,7 +1,11 @@
 .header {
+  position: fixed;
+  top: 0;
+  left: 0;
   z-index: $zHeader;
   display: flex;
   justify-content: center;
+  width: 100vw;
   padding: 16px 0;
   color: $colorWhite;
   background: $colorBlack;

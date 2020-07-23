@@ -1,0 +1,15 @@
+.section {
+  &:not(:first-child) {
+    margin-top: 24px;
+  }
+
+  &__title {
+    padding-left: 4px;
+    background: $colorGray;
+    border-left: 4px solid $colorBlack;
+  }
+
+  &__content {
+    margin-top: 16px;
+  }
+}

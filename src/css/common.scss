@@ -1,22 +1,13 @@
 @import 'variables';
 @import 'header';
-@import 'hamburger';
-@import 'dropdown';
-@import 'todo';
-@import 'tab';
-@import 'modal';
-@import 'carousel';
-@import 'loading';
-@import 'pageTop';
-
-/*
-初期化
-*/
+@import 'main';
+@import 'section';
 
 html {
-  color: $themeBlack;
+  color: $colorBlack;
   font-size: 62.5%;
-  font-family: 'Noto Sans JP', sans-serif;
+  font-family: 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', Meiryo, sans-serif;
+  background: $colorWhite;
 }
 
 *,
@@ -27,40 +18,4 @@ html {
 
 body * {
   font-size: 1.6rem;
-}
-
-/*
-汎用
-*/
-
-.section {
-  margin: 100px 0;
-
-}
-
-.heading2 {
-  margin-bottom: 20px;
-  font-size: 2rem;
-}
-
-.isFixed {
-  overflow: hidden;
-}
-
-.container {
-  position: relative;
-  width: $contentWidth;
-  margin: 0 auto;
-}
-
-.button {
-  color: $themeBlack;
-  border: 1px solid $themeBlack;
-  cursor: pointer;
-  transition: 0.2s;
-
-  &:hover {
-    color: $themeWhite;
-    background: $themeBlack;
-  }
 }

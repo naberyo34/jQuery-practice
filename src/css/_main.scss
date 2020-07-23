@@ -1,0 +1,9 @@
+.main {
+  display: flex;
+  justify-content: center;
+  padding: 24px 0;
+
+  &__inner {
+    width: $contentWidth;
+  }
+}

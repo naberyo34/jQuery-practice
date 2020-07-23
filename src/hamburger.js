@@ -1,47 +1,18 @@
 import $ from 'jquery';
 
-function hamburger() {
-  /**
-   * セレクタ
-   */
-  const $icon = $('[data-js=hamburger__icon]');
-  const $wrapper = $('[data-js=hamburger__wrapper]');
-  const $body = $('body');
-
-  const icon = '[data-js=hamburger__icon]';
-  const wrapper = '[data-js=hamburger__wrapper]';
-
-  /**
-   * クリックイベント
-   */
-  const handleClick = () => {
-    const iconActive = 'header__hamburger--isActive'
-    const wrapperActive = 'hamburger__wrapper--isActive'
-    const fixed = 'isFixed';
-
-    // toggleClass は 「あれば外す、なければ付ける」を勝手にやってくれる
-    $icon.toggleClass(iconActive);
-    $wrapper.toggleClass(wrapperActive);
-    $body.toggleClass(fixed);
+const hamburger = () => {
+  // jQueryオブジェクト
+  const icon = '[data-js-selector=hamburger]';
+  const $icon = $(icon);
+  // セレクタ
+  const activeClass = 'hamburger--active';
+  // アクティブクラスを付け外しする関数
+  const toggleActive = () => {
+    $icon.toggleClass(activeClass);
   };
 
-  const handleWrapperClick = () => {
-    const iconActive = 'header__hamburger--isActive'
-    const wrapperActive = 'hamburger__wrapper--isActive'
-    const fixed = 'isFixed';
-
-    // wrapperをクリックしたら問答無用でactiveが外れる
-    $icon.removeClass(iconActive);
-    $wrapper.removeClass(wrapperActive);
-    $body.removeClass(fixed);
-  }
-
-  /**
-   * イベントの設定
-   */
-  $body
-    .on('click', icon, handleClick)
-    .on('click', wrapper, handleWrapperClick);
-}
+  // イベントリスナ付与
+  $('body').on('click', icon, toggleActive);
+};
 
 export default hamburger;

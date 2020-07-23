@@ -1,0 +1,33 @@
+.tab {
+  &__items {
+    display: flex;
+  }
+
+  &__item {
+    padding: 8px;
+    background: $colorGray;
+    cursor: pointer;
+
+    &:not(:first-child) {
+      margin-left: 8px;
+    }
+
+    &--active {
+      color: $colorWhite;
+      background: $colorBlack;
+    }
+  }
+
+  &__contents {
+    padding: 8px;
+    border: 1px solid $colorBlack;
+  }
+
+  &__content {
+    display: none;
+
+    &--active {
+      display: block;
+    }
+  }
+}

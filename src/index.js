@@ -8,6 +8,7 @@ import carousel from './carousel';
 import smoothScroll from './smoothScroll';
 import scrollAction from './scrollAction';
 import loading from './loading';
+import todo from './todo';
 
 import './css/reset.css';
 import './css/common.scss';
@@ -23,4 +24,5 @@ $(() => {
   carousel();
   smoothScroll();
   scrollAction();
+  todo();
 });

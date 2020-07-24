@@ -1,0 +1,67 @@
+.todo {
+  &__tab {
+    display: flex;
+    margin-top: 16px;
+  }
+
+  &__tabItem {
+    padding: 8px;
+    background: $colorGray;
+
+    &--active {
+      color: $colorWhite;
+      background: $colorBlack;
+    }
+
+    &:not(:first-child) {
+      margin-left: 8px;
+    }
+  }
+
+  &__content {
+    padding: 8px;
+    border: 1px solid $colorBlack;
+  }
+
+  &__list {
+    display: none;
+
+    &--active {
+      display: block;
+    }
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px;
+    background: $colorGray;
+    border-left: 4px solid $colorBlack;
+
+    &:not(:first-child) {
+      margin-top: 4px;
+    }
+  }
+
+  &__itemMenu {
+    display: flex;
+  }
+
+  &__itemButton {
+    display: block;
+    padding: 4px;
+    font-size: 1.2rem;
+    border: 1px solid $colorBlack;
+    cursor: pointer;
+
+    &:not(:first-child) {
+      margin-left: 4px;
+    }
+
+    &:hover {
+      color: $colorWhite;
+      background: $colorBlack;
+    }
+  }
+}

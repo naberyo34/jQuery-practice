@@ -89,9 +89,7 @@
     <span class="smoothScroll__arrow"></span>
   </a>
   <section class="loading loading--active" data-js-selector="loading">
-    <h1
-      class="loading__title"
-    >
+    <h1 class="loading__title">
       jQuery十番勝負🍚
     </h1>
   </section>
@@ -286,6 +284,31 @@
       </section>
       <section class="section" id="todo">
         <h2 class="section__title">🥺 最終課題: 簡易ToDoリスト</h2>
+        <div class="section__content">
+          <div class="todo">
+            <form>
+              <input type="text" placeholder="タスクを入力" data-js-selector="todoInput" />
+              <input type="submit" value="追加" data-js-selector="todoAdd" />
+            </form>
+            <ul class="todo__tab">
+              <li class="todo__tabItem todo__tabItem--active" data-js-selector="todoTab">未完了</li>
+              <li class="todo__tabItem" data-js-selector="todoTab">完了</li>
+            </ul>
+            <div class="todo__content">
+              <ul class="todo__list todo__list--active" data-js-selector="todoList" data-js-sub="todoIncomplete">
+                <li class="todo__item" data-js-selector="todoItem">
+                  <p>牛乳を買う</p>
+                  <div class="todo__itemMenu">
+                    <a class="todo__itemButton" data-js-selector="todoFinish">完了</a>
+                    <a class="todo__itemButton" data-js-selector="todoDelete">削除</a>
+                  </div>
+                </li>
+              </ul>
+              <ul class="todo__list" data-js-selector="todoList"  data-js-sub="todoComplete">
+              </ul>
+            </div>
+          </div>
+        </div>
       </section>
     </div>
   </main>

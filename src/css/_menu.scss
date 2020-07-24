@@ -1,0 +1,30 @@
+.menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: $zMenu;
+  width: 240px;
+  height: 100vh;
+  padding: 64px 16px;
+  color: $colorWhite;
+  background: $colorBlack;
+  transform: translateX(240px);
+  visibility: hidden;
+  transition: transform $animationFast, visibility $animationFast;
+
+  &--active {
+    transform: translateX(0);
+    visibility: visible;
+  }
+
+  &__item {
+    &:not(:first-child) {
+      margin-top: 8px;
+    }
+  }
+
+  &__link {
+    color: inherit;
+    text-decoration: none;
+  }
+}

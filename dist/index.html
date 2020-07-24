@@ -15,13 +15,47 @@
       </a>
     </div>
   </header>
+  <nav class="menu" data-js-selector="menu">
+    <ul class="menu__list">
+      <li class="menu__item">
+        <a href="#hamburger" class="menu__link" data-js-selector="smoothScroll">ハンバーガーメニュー</a>
+      </li>
+      <li class="menu__item">
+        <a href="#dropdown" class="menu__link" data-js-selector="smoothScroll">ドロップダウン</a>
+      </li>
+      <li class="menu__item">
+        <a href="#accordion" class="menu__link" data-js-selector="smoothScroll">アコーディオン</a>
+      </li>
+      <li class="menu__item">
+        <a href="#tab" class="menu__link" data-js-selector="smoothScroll">タブ</a>
+      </li>
+      <li class="menu__item">
+        <a href="#modal" class="menu__link" data-js-selector="smoothScroll">モーダル</a>
+      </li>
+      <li class="menu__item">
+        <a href="#carousel" class="menu__link" data-js-selector="smoothScroll">カルーセル</a>
+      </li>
+      <li class="menu__item">
+        <a href="#smoothScroll" class="menu__link" data-js-selector="smoothScroll">スムーススクロール</a>
+      </li>
+      <li class="menu__item">
+        <a href="#scrollAction" class="menu__link" data-js-selector="smoothScroll">スクロールアクション</a>
+      </li>
+      <li class="menu__item">
+        <a href="#loading" class="menu__link" data-js-selector="smoothScroll">ローディング画面</a>
+      </li>
+      <li class="menu__item">
+        <a href="#todo" class="menu__link" data-js-selector="smoothScroll">簡易ToDoリスト</a>
+      </li>
+    </ul>
+  </nav>
   <section class="modal" data-js-selector="modal">
     <div class="modal__content">
       <p>モーダルを表示中です。</p>
       <a class="modal__button" data-js-selector="modalButton">閉じる</a>
     </div>
   </section>
-  <a class="smoothScroll" data-js-selector="smoothScroll">
+  <a class="smoothScroll" data-js-selector="smoothScroll" data-js-sub="scrollTop">
     <span class="smoothScroll__arrow"></span>
   </a>
   <main class="main">
@@ -186,6 +220,26 @@
       </section>
       <section class="section" id="scrollAction">
         <h2 class="section__title">🎬 スクロールアクション</h2>
+        <div class="section__content">
+          <div
+            class="scrollAction scrollAction--fadeInTop"
+            data-js-selector="scrollAction"
+          >
+            <p>要素Aです。</p>
+          </div>
+          <div
+            class="scrollAction scrollAction--fadeInLeft"
+            data-js-selector="scrollAction"
+          >
+            <p>要素Bです。</p>
+          </div>
+          <div
+            class="scrollAction scrollAction--fadeInRight"
+            data-js-selector="scrollAction"
+          >
+            <p>要素Cです。</p>
+          </div>
+        </div>
       </section>
       <section class="section" id="loading">
         <h2 class="section__title">⏳ ローディング画面</h2>
@@ -198,4 +252,9 @@
       </section>
     </div>
   </main>
+  <footer class="footer">
+    <small class="footer__small"
+      >jQuery十番勝負🍚 by Ryo Watanabe / tama.</small
+    >
+  </footer>
 </body>

@@ -1,5 +1,6 @@
 @import 'variables';
 @import 'header';
+@import 'menu';
 @import 'main';
 @import 'section';
 @import 'dropdown';
@@ -8,6 +9,8 @@
 @import 'modal';
 @import 'carousel';
 @import 'smoothScroll';
+@import 'scrollAction';
+@import 'footer';
 
 html {
   color: $colorBlack;

@@ -2,11 +2,17 @@ import $ from 'jquery';
 
 const hamburger = () => {
   const icon = '[data-js-selector=hamburger]';
+  const menu = '[data-js-selector=menu]';
   const $icon = $(icon);
-  const activeClass = 'hamburger--active';
+  const $menu = $(menu);
+  const activeClass = {
+    icon: 'hamburger--active',
+    menu: 'menu--active',
+  };
   // アクティブクラスを付け外しする関数
   const toggleActive = () => {
-    $icon.toggleClass(activeClass);
+    $icon.toggleClass(activeClass.icon);
+    $menu.toggleClass(activeClass.menu);
   };
 
   // イベントリスナ付与

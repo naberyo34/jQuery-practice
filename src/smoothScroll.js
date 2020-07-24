@@ -2,8 +2,9 @@ import $ from 'jquery';
 
 const smoothScroll = () => {
   const link = '[data-js-selector=smoothScroll]';
+  const scrollTop = '[data-js-sub=scrollTop]';
   const header = '[data-js-selector=header]';
-  const $link = $('[data-js-selector=smoothScroll]');
+  const $scrollTop = $(scrollTop);
   const $header = $(header);
   const $window = $(window);
   const activeClass = 'smoothScroll--active';
@@ -15,10 +16,10 @@ const smoothScroll = () => {
     const scroll = $window.scrollTop();
 
     if (scroll > 120) {
-      $link.addClass(activeClass);
+      $scrollTop.addClass(activeClass);
       return;
     }
-    $link.removeClass(activeClass);
+    $scrollTop.removeClass(activeClass);
   };
 
   const scroll = e => {

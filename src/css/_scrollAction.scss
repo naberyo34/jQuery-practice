@@ -1,0 +1,44 @@
+.scrollAction {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 64px 0;
+  visibility: hidden;
+  opacity: 0;
+  transition: transform $animationSlow, visibility $animationSlow, opacity $animationSlow;
+
+  &--fadeInTop {
+    transform: translateY(-100px);
+  }
+
+  &--fadeInLeft {
+    transform: translateX(-100px);
+  }
+
+  &--fadeInRight {
+    transform: translateX(100px);
+  }
+
+  &--active {
+    transform: translateX(0) translateY(0);
+    visibility: visible;
+    opacity: 1;
+  }
+
+  &:not(:first-child) {
+    margin-top: 32px;
+  }
+
+  &:nth-child(1) {
+    background: #faa;
+  }
+
+  &:nth-child(2) {
+    background: #afa;
+  }
+
+  &:nth-child(3) {
+    background: #aaf;
+  }
+}

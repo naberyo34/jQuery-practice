@@ -7,12 +7,14 @@ import modal from './modal';
 import carousel from './carousel';
 import smoothScroll from './smoothScroll';
 import scrollAction from './scrollAction';
+import loading from './loading';
 
 import './css/reset.css';
 import './css/common.scss';
 
 
 $(() => {
+  loading();
   hamburger();
   dropdown();
   accordion();

@@ -5,7 +5,7 @@
   <script src="bundle.js"></script>
 </head>
 
-<body>
+<body class="fixed">
   <header class="header" data-js-selector="header">
     <div class="header__inner">
       <h1 class="header__title">jQuery十番勝負🍚</h1>
@@ -18,34 +18,60 @@
   <nav class="menu" data-js-selector="menu">
     <ul class="menu__list">
       <li class="menu__item">
-        <a href="#hamburger" class="menu__link" data-js-selector="smoothScroll">ハンバーガーメニュー</a>
+        <a href="#hamburger" class="menu__link" data-js-selector="smoothScroll"
+          >ハンバーガーメニュー</a
+        >
       </li>
       <li class="menu__item">
-        <a href="#dropdown" class="menu__link" data-js-selector="smoothScroll">ドロップダウン</a>
+        <a href="#dropdown" class="menu__link" data-js-selector="smoothScroll"
+          >ドロップダウン</a
+        >
       </li>
       <li class="menu__item">
-        <a href="#accordion" class="menu__link" data-js-selector="smoothScroll">アコーディオン</a>
+        <a href="#accordion" class="menu__link" data-js-selector="smoothScroll"
+          >アコーディオン</a
+        >
       </li>
       <li class="menu__item">
-        <a href="#tab" class="menu__link" data-js-selector="smoothScroll">タブ</a>
+        <a href="#tab" class="menu__link" data-js-selector="smoothScroll"
+          >タブ</a
+        >
       </li>
       <li class="menu__item">
-        <a href="#modal" class="menu__link" data-js-selector="smoothScroll">モーダル</a>
+        <a href="#modal" class="menu__link" data-js-selector="smoothScroll"
+          >モーダル</a
+        >
       </li>
       <li class="menu__item">
-        <a href="#carousel" class="menu__link" data-js-selector="smoothScroll">カルーセル</a>
+        <a href="#carousel" class="menu__link" data-js-selector="smoothScroll"
+          >カルーセル</a
+        >
       </li>
       <li class="menu__item">
-        <a href="#smoothScroll" class="menu__link" data-js-selector="smoothScroll">スムーススクロール</a>
+        <a
+          href="#smoothScroll"
+          class="menu__link"
+          data-js-selector="smoothScroll"
+          >スムーススクロール</a
+        >
       </li>
       <li class="menu__item">
-        <a href="#scrollAction" class="menu__link" data-js-selector="smoothScroll">スクロールアクション</a>
+        <a
+          href="#scrollAction"
+          class="menu__link"
+          data-js-selector="smoothScroll"
+          >スクロールアクション</a
+        >
       </li>
       <li class="menu__item">
-        <a href="#loading" class="menu__link" data-js-selector="smoothScroll">ローディング画面</a>
+        <a href="#loading" class="menu__link" data-js-selector="smoothScroll"
+          >ローディング画面</a
+        >
       </li>
       <li class="menu__item">
-        <a href="#todo" class="menu__link" data-js-selector="smoothScroll">簡易ToDoリスト</a>
+        <a href="#todo" class="menu__link" data-js-selector="smoothScroll"
+          >簡易ToDoリスト</a
+        >
       </li>
     </ul>
   </nav>
@@ -55,9 +81,20 @@
       <a class="modal__button" data-js-selector="modalButton">閉じる</a>
     </div>
   </section>
-  <a class="smoothScroll" data-js-selector="smoothScroll" data-js-sub="scrollTop">
+  <a
+    class="smoothScroll"
+    data-js-selector="smoothScroll"
+    data-js-sub="scrollTop"
+  >
     <span class="smoothScroll__arrow"></span>
   </a>
+  <section class="loading loading--active" data-js-selector="loading">
+    <h1
+      class="loading__title"
+    >
+      jQuery十番勝負🍚
+    </h1>
+  </section>
   <main class="main">
     <div class="main__inner">
       <section class="section" id="hamburger">

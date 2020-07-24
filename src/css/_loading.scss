@@ -1,0 +1,24 @@
+.loading {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: $zLoading;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  background: $colorWhite;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility $animationSlow, opacity $animationSlow;
+
+  &--active {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  &__title {
+    font-size: 6.4rem;
+  }
+}
